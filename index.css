@@ -295,17 +295,21 @@ footer div p {
     nav {
           display: flex;
           flex-direction: column;
+          flex-wrap: wrap;
     }
     nav div {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    nav a:hover{
+        display: none;
+    }
 
     footer {
     background-color: white;
     display: flex;
-    flex-direction: row; 
+    flex-direction:column; 
     align-items: center;
     justify-content: space-around;
 }
@@ -316,6 +320,31 @@ footer div p {
         justify-content: center;
         align-items: center;
     }
+
+    .Competences{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .Projet  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 2fr;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    .Apropos {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
     .accroche img {
         display: none;
     }
