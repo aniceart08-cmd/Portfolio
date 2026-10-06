@@ -290,6 +290,12 @@ footer div p {
 
    *{
         margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: auto;
+        padding: 0;
     }
 
     nav {
@@ -309,9 +315,8 @@ footer div p {
     footer {
     background-color: white;
     display: flex;
-    flex-direction:column; 
+    flex-direction:column-reverse; 
     align-items: center;
-    justify-content: space-around;
 }
 
     footer section {
@@ -321,22 +326,40 @@ footer div p {
         align-items: center;
     }
 
-    .Competences{
+    footer div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+    }
+
+    .Mention{
+        display:none;
+    }
+
+    .Competences{
+        display: grid;
+        Grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: stretch;
+       
+    }
+
+    .Competences h2{
+        display: none;
+    }
+
+    #enleve{
+        display: none;
     }
     
     .Projet  {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        margin: auto;
+        justify-items: stretch;
     }
     .Apropos {
         display: flex;
