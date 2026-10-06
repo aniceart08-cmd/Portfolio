@@ -310,7 +310,7 @@ footer div p {
     }
     
     nav a:hover{
-      background-color:transparent;
+      background-color: transparent;
       border-radius: 0px;
 }
     
@@ -371,7 +371,10 @@ footer div p {
     }
 
     .accroche img {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
     }
    
  }
