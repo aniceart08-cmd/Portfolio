@@ -308,10 +308,7 @@ footer div p {
         justify-content: center;
         align-items: center;
     }
-    nav a:hover{
-        display: none;
-    }
-
+    
     footer {
     background-color: white;
     display: flex;
