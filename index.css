@@ -17,13 +17,18 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 15px;
     position:sticky;
     margin: 2%;
-    left: 20%;
-    top: -20%;
+    top: 20%;
+    z-index: 1000; 
     
 }
+
+section {
+    scroll-margin-top: 100px;
+}
+
 nav img {
      border-radius: 600px ;
      margin-bottom: 10px;
