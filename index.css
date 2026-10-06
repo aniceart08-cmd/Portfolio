@@ -310,7 +310,8 @@ footer div p {
     }
     
     nav a:hover{
-    display: none;
+      background-color:transparent;
+      border-radius: 0px;
 }
     
     footer {
