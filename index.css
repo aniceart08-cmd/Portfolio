@@ -308,11 +308,10 @@ footer div p {
           flex-direction: column;
           flex-wrap: wrap;
     }
-    nav div {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    
+    nav a:hover{
+    display: none;
+}
     
     footer {
     background-color: white;
