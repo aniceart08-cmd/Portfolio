@@ -41,11 +41,7 @@ nav a {
    background-color:#175732  ;
    text-align: center;
 }
-nav a:hover{
-    background-color: #ff9f00;
-    border-radius: 7px;
 
-}
 h1{
     font-size: 40px;
     color: #E5E7EB;
@@ -92,36 +88,79 @@ em{
 .Projet {
  display: grid;
  grid-template-columns: 2fr 2fr 2fr ;
- grid-template-rows: 2fr;
- padding: 20px;
- margin: 20px;
+ grid-template-rows: 1fr;
+ 
 }
+
 .Projet div{
      background-color:#EDEDED;
      border-radius: 10px;
      margin: 10px;
      padding: 10px;
-     border-right: 1px solid #175732;
-     border-bottom: 1px solid #175732;
 }
-.Projet h3{
-    color: black;
-    padding: 5px;
-    font-family: "Montserrat", sans-serif;
-    padding-left: 20px;
+
+.defiler {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  left: 50px;
 }
-.Projet p{
-    color: black;
-    padding: 5px;
-    font-family: "Montserrat", sans-serif;
-    padding-left: 10px;
+
+
+/* .Buton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+} */
+
+.defiler-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
-.Projet li{
-    list-style: none;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    color: black;
-    padding: 5px;
+
+.defiler-image.active {
+  opacity: 1;
+}
+
+.defiler-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Apropos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description{
+ display: flex;
+ justify-content: space-around;
+ flex-direction: row;
+ margin-bottom: 20px;
+}
+
+.description a{
+    padding: 10px;
+    background-color: #ff9f00;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
 }
 
 .Apropos{
@@ -148,17 +187,12 @@ em{
     width: 20%;
     height: 20%;
 }
-.Apropos div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 
 .Competences{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
+    margin-top: 10px;
 }
 .Competences div{
     display: flex;
@@ -340,10 +374,8 @@ footer div p {
     }
 
     .Competences{
-        display: grid;
-        Grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-items: stretch;
+        display: flex;
+        flex-direction: column;
        
     }
 
@@ -351,28 +383,44 @@ footer div p {
         display: none;
     }
 
+   
+
     #enleve{
         display: none;
     }
     
     .Projet  {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr;
-        justify-content: center;
-        align-items: center;
-        justify-items: stretch;
+       display:grid;
+       grid-template-columns: 2fr;
+       position: relative;
+       right: 50px;
+       align-items: stretch;
+    }
+
+    div.defiler{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 2fr 2fr 2fr;
+
+    }
+
+    .defiler-image{
+          position:absolute;
+
     }
     .Apropos {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;
     }
 
     .accroche img {
         display: none;
         
+    }
+
+    .description{
+        display: none;
     }
    
  }
