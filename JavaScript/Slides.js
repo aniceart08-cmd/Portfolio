@@ -60,8 +60,3 @@ setInterval(modification, 3000)
  }
 console.log(nodification())
 */
-
- function calcule(a,b){
-     return a*b
-}
-console.log(calcule(2,4))
